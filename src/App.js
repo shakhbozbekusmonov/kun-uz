@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import './sass/main.scss';
 import {ToastContainer} from "react-toastify";
 import AdminMenus from "./pages/AdminMenus";
 import AdminNews from "./pages/AdminNews";
@@ -18,16 +19,15 @@ function App() {
           <Router>
               <Routes>
                   <Route element={<PrivateRoutes/>}>
-                      <Route element={<Home/>} path="/uz" exact/>
+                      <Route path='uz' element={<Uz/>}/>
                       <Route element={<AdminMenus/>} path="/admin/menus" exact/>
                       <Route element={<AdminNews/>} path="/admin/news" exact/>
                   </Route>
-                  <Route path='uz' element={<Uz/>}/>
                   <Route path='ru' element={<Ru/>}/>
                   <Route path='en' element={<En/>}/>
                   <Route element={<Login/>} path='/login'/>
               </Routes>
-              <ToastContainer/>
+              <ToastContainer autoClose={2000}/>
           </Router>
         </>
     );

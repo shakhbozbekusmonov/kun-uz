@@ -16,13 +16,13 @@ export function login(values, history){
         const data = new FormData();
         data.append("username", values.username);
         data.append("password", values.password);
+        dispatch(signIn({isLoading: true}));
         axios.post(API_PATH + "login", data)
             .then((res) => {
                 console.log(res);
                 localStorage.setItem(TOKEN_NAME, res.data.token_type + " " + res.data.access_token);
-                dispatch({type: ""});
-                history("/admin/menus");
-                console.log(history);
+                dispatch({type: "", isLoading: false});
+                history("/admin/menus")
                 toast.success("Muvaffaqiyatli!!!")
             })
             .catch((error) => {

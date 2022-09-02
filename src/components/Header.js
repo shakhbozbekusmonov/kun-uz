@@ -36,6 +36,25 @@ const Header = () => {
                     </select>
                 </div>
             </div>
+            <div className="hudud">
+                <ul className="nav">
+                    <li className="nav-item"><p className="hudud-title text-white nav-link">Hudud</p></li>
+                    <li className="nav-item"><a href="" className="nav-link">Toshkent</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Qoraqalpog'iston</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Andijon</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Farg'ona</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Namangan</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Samarqand</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Buxoro</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Xorazm</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Surxondaryo</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Qashqadaryo</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Jizzax</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Sirdaryo</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Toshkent vil.</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">Navoiy</a></li>
+                </ul>
+            </div>
         </nav>
     );
 };
