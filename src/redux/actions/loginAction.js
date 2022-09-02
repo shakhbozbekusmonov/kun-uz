@@ -1,7 +1,15 @@
 import axios from "axios";
 import {API_PATH, TOKEN_NAME} from "../../tools/contants";
 import {toast} from "react-toastify";
+import {SIGN_IN} from "../types/loginTypes";
 
+
+export function signIn(data){
+    return {
+        type: SIGN_IN,
+        payload: data
+    }
+}
 
 export function login(values, history){
     return function (dispatch){

@@ -3,7 +3,7 @@ import {TOKEN_NAME} from "../tools/contants";
 
 const PrivateRoutes = () => {
     return (
-        localStorage.getItem(TOKEN_NAME) ? <Outlet/> : <Navigate to='/'/>
+        localStorage.getItem(TOKEN_NAME) ? <Outlet/> : <Navigate to='/uz'/>
     )
 }
 

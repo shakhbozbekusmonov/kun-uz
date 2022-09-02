@@ -1,11 +1,9 @@
 import React from 'react';
 import {Formik} from "formik";
 import {connect} from "react-redux";
-import {login} from "../redux/actions/loginAction";
-import { useNavigate } from "react-router-dom";
+import {login, signIn} from "../redux/actions/loginAction";
 
 const Login = (props) => {
-    const history = useNavigate();
     return (
         <div className='container'>
             <div className="row justify-content-center align-items-center w-100 vh-100">
@@ -15,7 +13,7 @@ const Login = (props) => {
                             <Formik
                                 initialValues={{ username: '', password: '' }}
                                 onSubmit={(values) => {
-                                    props.login(values, history);
+                                    props.login(values);
                                 }}
                             >
                                 {({
@@ -55,4 +53,10 @@ const Login = (props) => {
     );
 };
 
-export default connect(null, {login})(Login);
+const mapStateToProps = (state) => {
+    return {
+        isLoading: state.login.isLoading
+    }
+}
+
+export default connect(mapStateToProps, {login, signIn})(Login);
