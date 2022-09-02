@@ -13,11 +13,12 @@ export function login(values, history){
                 console.log(res);
                 localStorage.setItem(TOKEN_NAME, res.data.token_type + " " + res.data.access_token);
                 dispatch({type: ""});
-                history.push("/admin/menus");
+                history("/admin/menus");
+                console.log(history);
                 toast.success("Muvaffaqiyatli!!!")
             })
             .catch((error) => {
-                toast.error(error.response.data.message);
+                toast.error(error);
             })
     }
 }
