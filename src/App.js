@@ -12,17 +12,17 @@ import En from "./pages/En";
 import Home from "./pages/Home";
 
 
-
 function App() {
     return (
         <>
           <Router>
               <Routes>
                   <Route element={<PrivateRoutes/>}>
-                      <Route path='uz' element={<Uz/>}/>
+                      <Route path='/' index element={<Home/>}/>
                       <Route element={<AdminMenus/>} path="/admin/menus" exact/>
                       <Route element={<AdminNews/>} path="/admin/news" exact/>
                   </Route>
+                  <Route path='uz' element={<Uz/>}/>
                   <Route path='ru' element={<Ru/>}/>
                   <Route path='en' element={<En/>}/>
                   <Route element={<Login/>} path='/login'/>

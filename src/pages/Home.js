@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from "../components/Header";
+import Uz from "./Uz";
 
 const Home = () => {
     return (
         <>
-            <Header/>
+            <Uz/>
         </>
     );
 };

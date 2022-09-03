@@ -25,6 +25,7 @@
       height: 100%;
       .nav-item{
         .hudud-title{
+          height: 40px;
           font-weight: bold;
           background-color: #17206a;
           position: relative;
@@ -43,6 +44,7 @@
           }
         }
         .nav-link{
+          font-size: 14px;
           color: #585858;
         }
       }

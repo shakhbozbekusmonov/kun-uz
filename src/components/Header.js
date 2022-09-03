@@ -38,21 +38,21 @@ const Header = () => {
             </div>
             <div className="hudud">
                 <ul className="nav">
-                    <li className="nav-item"><p className="hudud-title text-white nav-link">Hudud</p></li>
-                    <li className="nav-item"><a href="" className="nav-link">Toshkent</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Qoraqalpog'iston</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Andijon</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Farg'ona</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Namangan</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Samarqand</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Buxoro</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Xorazm</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Surxondaryo</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Qashqadaryo</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Jizzax</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Sirdaryo</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Toshkent vil.</a></li>
-                    <li className="nav-item"><a href="" className="nav-link">Navoiy</a></li>
+                    <li className="nav-item"><p className="hudud-title text-white nav-link">{getText("hudud")}</p></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("tosh")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("qoraqalpoq")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("andijon")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("fargona")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("namangan")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("samarqand")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("buxoro")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("xorazm")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("surxondaryo")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("qashqadaryo")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("jizzax")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("sirdaryo")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("toshkent")}</a></li>
+                    <li className="nav-item"><a href="" className="nav-link">{getText("navoiy")}</a></li>
                 </ul>
             </div>
         </nav>

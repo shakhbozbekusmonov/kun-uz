@@ -4,5 +4,20 @@ export const en = {
     tech: "Technology",
     sport: "Sport",
     business: "Business",
-    last: "Latest news"
+    last: "Latest news",
+    hudud: "Territory",
+    tosh: "Tashkent",
+    qoraqalpoq: "Karakalpakstan",
+    andijon: "Andijan",
+    fargona: "Ferghana",
+    namangan: "Namangan",
+    samarqand: "Samarkand",
+    buxoro: "Bukhara",
+    xorazm: "Khorezm",
+    surxondaryo: "Surkhandarya",
+    qashqadaryo: "Kashkadarya",
+    jizzax: "Jizzakh",
+    sirdaryo: "Syrdarya",
+    toshkent: "Tashkent reg.",
+    navoiy: "Navoi"
 };
